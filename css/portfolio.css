@@ -18,11 +18,16 @@ html, body{
 
 /*=========navbar=========*/
 
-#navbar{
-	position: fixed;
-	top: 0;
-/* 	background: #ccc; */
-	height: 100%;
+.navbar{
+	width: 100%;
+    background: #ccc;
+    height: 100%;
+    align-items: baseline !important;
+}
+
+.navbar-brand{
+	margin: 0 auto;
+	padding-top: 5% !important; 
 }
 
 .navbar-brand img{
@@ -58,6 +63,7 @@ html, body{
 
 .navbar ul{
 	list-style:none;
+	width: 100%;
 }
 
 .navbar ul li{
@@ -106,8 +112,7 @@ html, body{
 	color: #fff;
 	position: absolute;
 	top: 20%;
-	padding-left: 5%;
-	padding-top: 2%;
+	padding:3% 5%;
 }
 
 .wrap-text h1{
