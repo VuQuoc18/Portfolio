@@ -18,6 +18,13 @@ html, body{
 
 /*=========navbar=========*/
 
+#navbar{
+	position: fixed;
+	top: 0;
+/* 	background: #ccc; */
+	height: 100%;
+}
+
 .navbar-brand img{
 	border-radius: 4px;
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -59,6 +66,7 @@ html, body{
 	line-height: 70px;
 	text-align:left;
 	padding-left: 30px;
+	margin-left: 10px;
 }
 
 .navbar ul li a{
@@ -75,4 +83,34 @@ html, body{
 	background-image: linear-gradient(to right, #de7442, #e0893a);
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
+}
+
+/*=========Main Content=========*/
+.main-content{
+	margin-top:-20px;
+}
+
+
+.banner {
+    background-image: url(../images/cover.jpg);
+    height: 400px;
+	  background-size: cover;
+	  position: relative;
+}
+
+.wrap-text{
+	width: 80%;
+	border-radius: 14px;
+    background-image: linear-gradient(to left, #4f46ea, #2179d8);
+	margin-left:5%;
+	color: #fff;
+	position: absolute;
+	top: 20%;
+	padding-left: 5%;
+	padding-top: 2%;
+}
+
+.wrap-text h1{
+	font-size: 28px;
+	font-weight: bold;
 }
