@@ -1,0 +1,78 @@
+*{margin: 0; padding: 0;}
+
+html, body{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	overflow-x: hidden;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased !important;
+	font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important; 
+}
+
+.page-section{
+	padding-top: 50px; 
+	padding-bottom: 50px;
+}
+
+/*=========navbar=========*/
+
+.navbar-brand img{
+	border-radius: 4px;
+	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #373737;
+	-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#4f46ea), to(#2179d8)) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(top, #4f46ea, #2179d8) 1 100%;
+    -o-border-image: -o-linear-gradient(top, #4f46ea, #2179d8) 1 100%;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(#4f46ea), to(#2179d8)) 1 100%;
+    border-image: linear-gradient(to bottom, #4f46ea, #2179d8) 1 100%;
+	border-left-width: 4px;
+	border-left-style: solid;
+	padding-left: 10%;
+}
+
+.navbar-brand h3{
+	font-size: 16px;
+	color: #373737;
+	padding-left: 12%;
+}
+
+.navbar-brand h3{
+	font-size: 16px;
+	color: #373737;
+	padding-left: 12%;
+}
+
+.navbar ul{
+	list-style:none;
+}
+
+.navbar ul li{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align:left;
+	padding-left: 30px;
+}
+
+.navbar ul li a{
+	font-size: 15px;
+	color: #4c545b;
+}
+
+.navbar ul li img {
+	margin-right: 30px;
+}
+
+.navbar ul li:hover, .navbar ul li.active{
+	color:#fff;
+	background-image: linear-gradient(to right, #de7442, #e0893a);
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
