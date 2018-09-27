@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas: "Sidebar Banner Banner Banner" "Sidebar Portfolio Portfolio Portfolio" "Sidebar . . ." "Sidebar . . .";
+}
+
+.Banner { grid-area: Banner; }
+
+.Portfolio { grid-area: Portfolio; }
+
+.Sidebar {
+  display: grid;
+  grid-area: Sidebar;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: ". ." ". .";
+}
+
+.About me { grid-area: 3 / 2 / 4 / 5; }
+
+.Contact { grid-area: 4 / 2 / 5 / 5; }
+
