@@ -13,7 +13,7 @@
 
 
 <div class="grid-container">
-  <div class="banner">
+  <div id="Top" class="banner">
   	<div class="wrap-text">
 		<h1>Looking for a web developer?</h1>
 		<p>
@@ -24,7 +24,7 @@
   </div> <!-- End of banner -->
 
 
-  <div class="about-me">
+  <div id="aboutMe" class="about-me">
   	<div class="wrap">
   		<div class="item1">
 		<h1 class="">About me</h1>
@@ -43,7 +43,7 @@
   </div> <!-- End of about-me -->
 
 
-  <div class="sidebar ">
+  <div id="menu" class="sidebar">
   	<div class="top-sidebar">
   		<img src="images/portfolio.jpg" width="223px" height="223px">
 		<h2 class="mt-3">Quoc Le</h2>
@@ -51,108 +51,122 @@
   	</div>
   	<ul class="">
 		<li>
-			<img class="svg" src="images/home.svg" width="16px" height="16px"><a href="#">Home</a>
-			
+			<a href="#Top"><img src="images/home.png" width="16px" height="16px">Home</a>
 		</li>
 		<li>
-			<img src="images/about-me.png" width="16px" height="16px"><a href="#">About me</a>
+			<a href="#aboutMe"><img src="images/about-me.png" width="16px" height="16px">About me</a>
 		</li>
 		<li>
-			<img src="images/portfolio.png" width="16px" height="16px"><a href="#">Portfolio</a>
+			<a href="#myPortfolio"><img src="images/portfolio.png" width="16px" height="16px">Portfolio</a>
 		</li>
 		<li>
-			<img src="images/contact.png" width="16px" height="16px"><a href="#">Contact me</a>
+			<a href="#contactme"><img src="images/contact.png" width="16px" height="16px">Contact me</a>
 		</li>
 	</ul>
   </div> <!-- End of Sidebar -->
-  <div class="portfolio">
+  <div id="myPortfolio" class="portfolio">
 	<div class="wrap">
 		<h1>My portfolio</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<div class="wrap-items">
 		  <div class="item">
 		     <div class="hovereffect">
-		          <img src="images/item1.png" alt="">
+		          <img src="images/full-portfolio-thumb.png" alt="">
 		          <div class="overlay">
 		             <h2>Portfolio</h2>
 		             <a class="info" href="#">Read more +</a>
 		          </div>
 		      </div>
+
+		      <div class="readmore">
+		      	<i class="x-button fas fa-times"></i>     	
+		      	<img src="images/full-portfolio.jpg">
+				<div class="readmore-content">
+					<h3>My Portfolio</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<button type="button" class="skill-btn btn btn-link">Photoshop</button>
+					<button type="button" class="skill-btn btn btn-link">CSS Grid Layout</button>
+					<button type="button" class="skill-btn btn btn-link">HTML5/CSS3</button>
+					<button type="button" class="skill-btn btn btn-link">Jquery</button>
+					<button type="button" class="skill-btn btn btn-link">UI/UX</button>
+					<button class="btn btn-link visit-btn"><a href=""> Visit Website</a></button>
+				</div>
+
+		      </div>
 		  </div>
 		  <div class="item">
 		     <div class="hovereffect">
-		          <img src="images/item2.png" alt="">
+		          <img src="images/aromo-thumb.jpg" alt="">
 		          <div class="overlay">
 		             <h2>Aromo</h2>
 		             <a class="info" href="#">Read more +</a>
 		          </div>
 		      </div>
-		  </div>
-		  <div class="item">
-		     <div class="hovereffect">
-		          <img src="images/item3.png" alt="">
-		          <div class="overlay">
-		             <h2>More Project</h2>
-		             <a class="info" href="#">Read more +</a>
-		          </div>
-		      </div>
-		  </div>
-		  <div class="item">
-		     <div class="hovereffect">
-		          <img src="images/item4.png" alt="">
-		          <div class="overlay">
-		             <h2>More Project</h2>
-		             <a class="info" href="#">Read more +</a>
-		          </div>
-		      </div>
-		  </div>
-		  <div class="item">
-		     <div class="hovereffect">
-		          <img src="images/item5.png" alt="">
-		          <div class="overlay">
-		             <h2>More Project</h2>
-		             <a class="info" href="#">Read more +</a>
-		          </div>
-		      </div>
-		  </div>
-		  <div class="item">
-		     <div class="hovereffect">
-		          <img src="images/item5.png" alt="">
-		          <div class="overlay">
-		             <h2>More Project</h2>
-		             <a class="info" href="#">Read more +</a>
-		          </div>
-		      </div>
-		  </div>
-		</div>
 
+				<div class="readmore">
+		      	<i class="x-button fas fa-times"></i>
+		      	<img src="images/aromo.jpg">
+				<div class="readmore-content">
+					<h3>Aromo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+					<button type="button" class="skill-btn btn btn-link">Photoshop</button>
+					<button type="button" class="skill-btn btn btn-link">CSS Grid Layout</button>
+					<button type="button" class="skill-btn btn btn-link">HTML5/CSS3</button>
+					<button type="button" class="skill-btn btn btn-link">Jquery</button>
+					<button type="button" class="skill-btn btn btn-link">UI/UX</button>
+				</div>
+		      </div>
+		  </div>
+
+		  <div class="item">
+		     <div class="hovereffect">
+		          <img src="images/item1.png" alt="">
+		          <div class="overlay">
+		             <h2>Coming Soon</h2>
+		             <a class="info" href="#">Read more +</a>
+		          </div>
+		      </div>
+
+		      <div class="readmore">
+		      	<i class="x-button fas fa-times"></i>     	
+		      	<img src="images/on-going-project.jpg">
+				<div class="readmore-content">
+					<h3>Coming Soon</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+				</div>
+		      </div>
+		  </div>
+	</div>
 		<button class="btn btn-link"><span>	See more project</span> </button>
 	</div>
   </div> <!-- End of Portfolio -->
+	
 
-
-  <div class="contact">
+  <div id="contactme" class="contact">
 	<div class="wrap">
 		<h1>Drop me a line</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<form>
-			<div class="form-group">
+			<div class="form-group" onclick="/action_page.php">
 				<input type="text"  id="inputEmail" placeholder="Your Name" class="inline">
 				<input type="email"  id="inputPassword" placeholder="Email" class="inline">
 				<input type="tel" id="inputMobile" placeholder="Mobile Number" class="inline">
 			</div>
 			<textarea class="input-control" placeholder="Your messeage"></textarea>
 		</form>
-		<button class="btn btn-link">See more project</button>
+		<button class="btn btn-link">Send me a messeage</button>
 	</div>
   </div> <!-- End of Contact -->
   <div class="footer"><span>2018 &copy; All rights reserved.</span>
   </div>
 </div>
+	<div class="full-overlay">
+	</div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<!-- <script src="js/owl.carousel.min.js"></script> -->
+<script src="js/portfolio.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

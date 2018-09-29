@@ -171,16 +171,15 @@ html, body{
 .sidebar ul li{
   line-height: 70px;
   text-align:left;
-  padding-left: 25px;
+  margin-left: 25px;
   border-radius: 4px;
-  transition: all 0.4s ease-out;
-  opacity: 0.8;
+  transition: all 0.5s ease;
+  
 }
 
 .sidebar ul li:hover a, ul li a:hover, ul li:hover{
   cursor: pointer;
   color: #fff;
-  opacity: 1;
 }
 
 .sidebar ul li a{
@@ -188,19 +187,39 @@ html, body{
   color: #4c545b;
   text-decoration: none;
   font-weight: 500;
+  display: block;
+  transition: all 0.5s ease;
 }
 
 .sidebar ul li img {
   margin-right: 30px;
 }
+.sidebar ul li:hover img, .sidebar ul li a.active img {
+  filter: brightness(3);
+}
 
-.sidebar ul li:hover, .sidebar ul li.active{
-  color:#fff;
+.sidebar ul li a.active{
+  color: #fff;
   background-image: linear-gradient(to right, #de7442, #e0893a);
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  opacity: 1;
+  padding-left: 25px;
 }
 
+.sidebar ul li a:not(.active):hover {
+  color: #fff;
+  background-image: linear-gradient(to right, #de7442, #e0893a);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  opacity: 1;
+  padding-left: 25px;
+}
+/*
+.sidebar ul li:hover:not(.active){
+  padding-left: 25px;
+}
+*/
 /*===========About-me===========*/
 .about-me .wrap {
   margin-left: 1%;
@@ -305,13 +324,22 @@ html, body{
   font-size: 14px;
   text-decoration: none;
   opacity: 1;
-  transition: opacity 0.4s ease-out
+  transition: opacity 0.4s ease-out;
 }
 
 .portfolio button.btn.btn-link:hover, .contact button.btn.btn-link:hover{
   opacity: 0.7;
 }
 
+.visit-btn{
+  display: block;
+  margin: 0 26%;
+}
+
+.visit-btn a{
+  text-decoration: none;
+  color: #fff;
+}
 
 /*===========gallery===========*/
 
@@ -419,6 +447,118 @@ transform:translatey(0);
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
+
+/*===========read more===========*/
+.full-overlay{
+  background:#000000b3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.readmore{
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+  width: 70%;
+  overflow-y: auto;
+  background: #ffffffe6;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.readmore img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.x-button{
+  font-size: 50px;
+  color: #2179d8;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.4s;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.x-button:hover{
+  color:#fff;
+}
+
+.showing-up{
+  opacity: 1;
+  visibility: visible;
+}
+
+.readmore-content{
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  /*border: 3px solid aliceblue;*/
+  padding-top:100px;
+  margin: 0 1%;
+  text-align: center;
+  /*! background: #ccc; */
+  align-self: stretch;
+}
+
+button.skill-btn.btn.btn-link{
+  margin-top: 0;
+  border: solid 1px #5795ca;
+  border-radius: 4px;
+  background-origin: border-box;
+  background-clip: content-box;
+  color: #5975ca;
+  text-align: center;
+  line-height: 1.57;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fff;
+  width: auto;
+  margin: 5px 5px;
+  transition: 0.5s;
+}
+
+button.skill-btn.btn.btn-link:hover{
+  margin-top: 0;
+  border: solid 1px #5795ca;
+  border-radius: 4px;
+  background-origin: border-box;
+  background-clip: content-box;
+  color: #fff;
+  text-align: center;
+  line-height: 1.57;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  background-image: linear-gradient(to left, #4f46ea, #2179d8);
+  width: auto;
+  margin: 5px 5px;
+}
+
+
+.readmore-content h4{
+  display: inline;
+}
+
+.readmore-content p{
+  width: 100% !important;
+}
+
+
 /*===========contact===========*/
 .contact{
   
@@ -504,8 +644,4 @@ transition-delay:.2s;
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
-}
-
-.top-sidebar ul li img:nth-child(1){
- background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cg fill='%23706F68' fill-rule='nonzero'%3e%3cpath d='M6 6h4v2H6z'/%3e%3cpath d='M15.651 6.241l-7-6a.998.998 0 0 0-1.302 0L4 3.112V2a1 1 0 1 0-2 0v2.826L.349 6.241a.999.999 0 1 0 1.302 1.517L2 7.46V15a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7.46l.349.299c.189.162.42.241.651.241a1 1 0 0 0 .651-1.759zM12 14h-2v-4H6v4H4V5.746l4-3.428 4 3.428V14z'/%3e%3c/g%3e%3c/svg%3e ");
 }
