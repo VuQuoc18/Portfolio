@@ -64,6 +64,7 @@
 		</li>
 	</ul>
   </div> <!-- End of Sidebar -->
+
   <div id="myPortfolio" class="portfolio">
 	<div class="wrap">
 		<h1>My portfolio</h1>
@@ -146,15 +147,16 @@
 	<div class="wrap">
 		<h1>Drop me a line</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<form>
-			<div class="form-group" onclick="/action_page.php">
-				<input type="text"  id="inputEmail" placeholder="Your Name" class="inline">
-				<input type="email"  id="inputPassword" placeholder="Email" class="inline">
+		<form method="post" action="">
+			<div class="form-group">
+				<input type="text"  id="inputName" placeholder="Your Name" class="inline">
+				<input type="email"  id="inputEmail" placeholder="Email" class="inline">
 				<input type="tel" id="inputMobile" placeholder="Mobile Number" class="inline">
 			</div>
-			<textarea class="input-control" placeholder="Your messeage"></textarea>
+			<textarea class="input-control" id="inputMesseage" placeholder="Your messeage"></textarea>
+			<button type="submit" class="btn btn-link">Send me a messeage</button>
 		</form>
-		<button class="btn btn-link">Send me a messeage</button>
+		
 	</div>
   </div> <!-- End of Contact -->
   <div class="footer"><span>2018 &copy; All rights reserved.</span>
@@ -162,7 +164,15 @@
 </div>
 	<div class="full-overlay">
 	</div>
-
+<!-- 	<a id="nav-toggle" href="#!"><span></span></a>
+	<div id='cssmenu'>
+					<ul>
+					   <li><a href='#'>Home</a></li>					
+					   <li><a href='#'>About Me</a></li>
+					   <li><a href='#'>Portfolio</a></li>
+					   <li><a href='#'>Contact</a></li>
+					</ul>
+	</div>	 -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>

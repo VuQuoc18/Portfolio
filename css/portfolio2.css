@@ -225,18 +225,22 @@ html, body{
   margin-left: 1%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin: 5% 0 0 5%;
+  flex-flow: row wrap;
 }
 
 .about-me .wrap .item1{
-  
-  flex-basis: 50%; 
+width: 50%;
 }
 
 .about-me .wrap .item2{
-  flex-basis: 329px;
+  width: 50%;
+}
+
+.about-me .wrap .item2 img{
+  max-width: 100%;
+  height: auto;
 }
 
 .about-me h1{
@@ -644,4 +648,109 @@ button.skill-btn.btn.btn-link:hover{
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+}
+
+.cssmenu{
+  display: none;
+}
+
+#nav-toggle{
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .sidebar{
+    display: none;
+  }
+  .grid-container{
+    margin-left: -270px;
+  }
+  /*#nav-toggle{
+    display: block;
+  }
+
+  #nav-toggle {
+      background-color: transparent;
+    }
+    #nav-toggle {
+      position: absolute;
+      left: 18px;
+      top: 22px;
+      cursor: pointer;
+      padding: 10px 35px 16px 0px;
+      color: #4a5869;
+    }
+    #nav-toggle span,
+    #nav-toggle span:before,
+    #nav-toggle span:after {
+      cursor: pointer;
+      border-radius: 1px;
+      height: 5px;
+      width: 35px;
+      background: #fff;
+      position: absolute;
+      display: block;
+      content: "";
+      transition: all 500ms ease-in-out;
+    }
+
+
+    #nav-toggle span:before {
+      top: -10px;
+    }
+    #nav-toggle span:after {
+      bottom: -10px;
+    }
+
+    #nav-toggle.toggle span {
+      background-color: transparent;
+    }
+    #nav-toggle.toggle span:before, #nav-toggle.active span:after {
+      top: 0;
+    }
+    #nav-toggle.toggle span:before {
+      transform: rotate(45deg);
+    }
+    #nav-toggle.toggle span:after {
+      transform: rotate(-45deg);
+    }
+
+  #cssmenu{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    background: #fffc;
+    width: 30%;
+    padding: 2% 2%;
+  }
+  
+  #cssmenu ul{
+    list-style: none;
+  }
+  
+  #cssmenu ul li{
+  height: 50px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  }
+  
+  #cssmenu ul li a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+  }
+  
+  #cssmenu li:hover{
+    background: #ff9306;
+  }
+  
+  #cssmenu li:hover a{
+    color: #fff;
+  }
+*/
 }
